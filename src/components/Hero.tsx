@@ -25,24 +25,14 @@ const Hero = () => {
             decentralized research, open collaboration, and global knowledge sharing.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100 font-semibold px-8 py-3 flex items-center gap-3">
-              <img 
-                src="/lovable-uploads/c7770242-e3da-41ed-80f4-365f0a6a4137.png" 
-                alt="Logo" 
-                className="h-5 w-5 object-contain"
-              />
+            <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100 font-semibold px-8 py-3">
               Join the Movement
             </Button>
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-blue-900 font-semibold px-8 py-3 flex items-center gap-3"
+              className="border-2 border-white text-white hover:bg-white hover:text-blue-900 font-semibold px-8 py-3 bg-transparent"
             >
-              <img 
-                src="/lovable-uploads/c7770242-e3da-41ed-80f4-365f0a6a4137.png" 
-                alt="Logo" 
-                className="h-5 w-5 object-contain"
-              />
               Learn More
             </Button>
           </div>

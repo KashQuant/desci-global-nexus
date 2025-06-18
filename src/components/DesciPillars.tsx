@@ -1,5 +1,5 @@
 
-import { Microscope, Globe, Book, Atom, Dna, Award, Users, Beaker } from 'lucide-react';
+import { Microscope, Globe, Book, Atom, Dna, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const DesciPillars = () => {
@@ -9,42 +9,48 @@ const DesciPillars = () => {
       title: "Health & Medicine",
       description: "Advancing biomedical research through decentralized protocols and open collaboration",
       examples: ["Clinical trials transparency", "Drug discovery DAOs", "Patient data sovereignty"],
-      color: "from-emerald-500 to-emerald-700"
+      color: "from-emerald-500 to-emerald-700",
+      slug: "health-medicine"
     },
     {
       icon: Globe,
       title: "Climate & Environment",
       description: "Accelerating climate science through global research networks and data sharing",
       examples: ["Carbon measurement protocols", "Biodiversity tracking", "Climate modeling"],
-      color: "from-green-500 to-green-700"
+      color: "from-green-500 to-green-700",
+      slug: "climate-environment"
     },
     {
       icon: Book,
       title: "Open Access & Publishing",
       description: "Democratizing scientific publishing and peer review processes",
       examples: ["Decentralized peer review", "Open access journals", "Research NFTs"],
-      color: "from-blue-500 to-blue-700"
+      color: "from-blue-500 to-blue-700",
+      slug: "open-access-publishing"
     },
     {
       icon: Atom,
       title: "DeSci Infrastructure",
       description: "Building the foundational protocols and governance structures for decentralized science",
       examples: ["Research DAOs", "Funding mechanisms", "Identity protocols"],
-      color: "from-purple-500 to-purple-700"
+      color: "from-purple-500 to-purple-700",
+      slug: "desci-infrastructure"
     },
     {
       icon: Dna,
       title: "AI & Ethics in Research",
       description: "Ensuring responsible AI development and ethical research practices",
       examples: ["Algorithmic transparency", "Bias detection", "Ethical AI frameworks"],
-      color: "from-indigo-500 to-indigo-700"
+      color: "from-indigo-500 to-indigo-700",
+      slug: "ai-ethics"
     },
     {
       icon: Users,
       title: "Citizen Science",
       description: "Empowering global participation in scientific research and discovery",
       examples: ["Crowdsourced research", "Community data collection", "Public engagement"],
-      color: "from-orange-500 to-orange-700"
+      color: "from-orange-500 to-orange-700",
+      slug: "citizen-science"
     }
   ];
 
@@ -85,7 +91,11 @@ const DesciPillars = () => {
                     ))}
                   </ul>
                 </div>
-                <Button variant="outline" className="w-full mt-4">
+                <Button 
+                  variant="outline" 
+                  className="w-full mt-4"
+                  onClick={() => window.location.href = `/pillars/${pillar.slug}`}
+                >
                   Explore Research
                 </Button>
               </div>

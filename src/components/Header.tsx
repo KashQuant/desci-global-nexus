@@ -9,7 +9,7 @@ const Header = () => {
   const navItems = [
     { name: 'About', href: '#about' },
     { name: 'Pillars', href: '#pillars' },
-    { name: 'Research', href: '#research' },
+    { name: 'Research', href: '/research' },
     { name: 'Community', href: '#community' },
     { name: 'Events', href: '#events' },
     { name: 'Get Involved', href: '#get-involved' }
@@ -37,14 +37,14 @@ const Header = () => {
       </div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Enhanced Logo */}
           <div className="flex items-center space-x-4">
-            <div className="relative">
+            <div className="relative bg-white rounded-full p-2 shadow-lg">
               <img 
                 src="/lovable-uploads/c7770242-e3da-41ed-80f4-365f0a6a4137.png" 
                 alt="World DeSci Forum Logo" 
-                className="h-10 w-10 object-contain"
+                className="h-12 w-12 object-contain"
               />
             </div>
             <div>
