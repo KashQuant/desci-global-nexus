@@ -2,7 +2,11 @@
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import GlobalImpact from '@/components/GlobalImpact';
-import KeyInitiatives from '@/components/KeyInitiatives';
+import DesciPillars from '@/components/DesciPillars';
+import ResearchPolicy from '@/components/ResearchPolicy';
+import GlobalCommunity from '@/components/GlobalCommunity';
+import EventsForums from '@/components/EventsForums';
+import GetInvolved from '@/components/GetInvolved';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -11,7 +15,11 @@ const Index = () => {
       <Header />
       <Hero />
       <GlobalImpact />
-      <KeyInitiatives />
+      <DesciPillars />
+      <ResearchPolicy />
+      <GlobalCommunity />
+      <EventsForums />
+      <GetInvolved />
       <Footer />
     </div>
   );
