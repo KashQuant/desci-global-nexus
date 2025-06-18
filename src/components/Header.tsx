@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Menu, X, Globe, Atom, Microscope, Dna } from 'lucide-react';
+import { Menu, X, Atom, Microscope, Dna } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Header = () => {
@@ -16,7 +16,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 shadow-lg border-b border-blue-800 sticky top-0 z-50">
+    <header className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 shadow-lg border-b border-blue-700 sticky top-0 z-50">
       {/* Scientific pattern overlay */}
       <div className="absolute inset-0 opacity-10">
         <div className="flex items-center justify-center h-full">
@@ -41,10 +41,11 @@ const Header = () => {
           {/* Enhanced Logo */}
           <div className="flex items-center space-x-4">
             <div className="relative">
-              <Globe className="h-10 w-10 text-blue-300" />
-              <div className="absolute -top-1 -right-1">
-                <Atom className="h-4 w-4 text-blue-200" />
-              </div>
+              <img 
+                src="/lovable-uploads/c7770242-e3da-41ed-80f4-365f0a6a4137.png" 
+                alt="World DeSci Forum Logo" 
+                className="h-10 w-10 object-contain"
+              />
             </div>
             <div>
               <div className="text-xl font-bold text-white">
@@ -85,7 +86,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-blue-800 bg-slate-900/95 backdrop-blur-sm">
+          <div className="md:hidden border-t border-blue-700 bg-blue-900/95 backdrop-blur-sm">
             <nav className="py-4">
               {navItems.map((item) => (
                 <a
