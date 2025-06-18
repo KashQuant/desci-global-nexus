@@ -1,5 +1,5 @@
 
-import { Flask, Microscope, Atom, Dna, Award, Users } from 'lucide-react';
+import { Microscope, Globe, Book, Atom, Dna, Award, Users, Beaker } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const DesciPillars = () => {
